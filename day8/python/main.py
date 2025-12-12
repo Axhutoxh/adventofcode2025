@@ -18,6 +18,7 @@ for i,(x1,y1,z1) in enumerate(P):
         if i>j:
             distance = (x1-x2)**2 + (y1-y2)**2 + (z1-z2)**2
             D.append((distance, i, j,))
+
 D = sorted(D)
 
 
@@ -33,13 +34,15 @@ def mix(x,y):
 
 connections = 0
 for t,(_d, i, j) in enumerate(D):
-    if t==2:
+    if t==10:
         SZ = defaultdict(int)
+     
         for x in range(len(P)):
-            print(x,find(x))
+       
             SZ[find(x)] += 1
 
         S = sorted(SZ.values())
+       
         print(S[-1]*S[-2]*S[-3])
     if find(i) != find(j):
         connections += 1

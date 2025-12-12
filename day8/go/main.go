@@ -64,7 +64,9 @@ func main() {
 				p1, p2 := P[i], P[j]
 				dist := (p1.x-p2.x)*(p1.x-p2.x) + (p1.y-p2.y)*(p1.y-p2.y) + (p1.z-p2.z)*(p1.z-p2.z)
 				D = append(D, Edge{distSq: dist, i: i, j: j})
+
 			}
+
 		}
 	}
 
@@ -85,6 +87,7 @@ func main() {
 
 	connections := 0
 	for t, edge := range D {
+
 		if t == 1000 {
 			SZ := make(map[int]int)
 			for x := 0; x < n; x++ {
