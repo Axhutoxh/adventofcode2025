@@ -806,5 +806,5 @@ Continuing the above example, the first connection which causes all of the junct
 
 Continue connecting the closest unconnected pairs of junction boxes together until they're all in the same circuit. What do you get if you multiply together the X coordinates of the last two junction boxes you need to connect?
 
-Your puzzle answer was 9617397716.
+Your puzzle answer was 961739771*.
 ```
